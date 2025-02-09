@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -10,6 +11,13 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/app/AlertDialogView" />
+            <option value="$PROJECT_DIR$/app/BottomSheetDialog" />
+            <option value="$PROJECT_DIR$/app/BottomSheetDialogFragment_ListCardView" />
+            <option value="$PROJECT_DIR$/app/BottomSheetDialogFragment_Notification" />
+            <option value="$PROJECT_DIR$/app/BottomSheetDialogFragment_imagen" />
+            <option value="$PROJECT_DIR$/app/ExpandableListView" />
+            <option value="$PROJECT_DIR$/app/ExpandableListView_itemCardView" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

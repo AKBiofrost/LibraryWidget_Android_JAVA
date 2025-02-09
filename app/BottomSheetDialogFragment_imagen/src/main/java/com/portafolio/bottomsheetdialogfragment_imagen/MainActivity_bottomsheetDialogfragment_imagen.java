@@ -8,6 +8,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.portafolio.bottomsheetdialogfragment_imagen.DialogFragment.MyDialogFragmentImagen;
+
 public class MainActivity_bottomsheetDialogfragment_imagen extends AppCompatActivity {
 
     @Override
@@ -20,5 +22,14 @@ public class MainActivity_bottomsheetDialogfragment_imagen extends AppCompatActi
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        /*-----------------------------------------------------------------------------------------*/
+        MyDialogFragmentImagen dialog = new MyDialogFragmentImagen();
+        dialog.show(getSupportFragmentManager(), dialog.getTag());
+/*
+        MyBottomSheetDialog bottomSheet = new MyBottomSheetDialog();
+        bottomSheet.show(getSupportFragmentManager(), bottomSheet.getTag());
+*/
+        /*-----------------------------------------------------------------------------------------*/
+
     }
 }

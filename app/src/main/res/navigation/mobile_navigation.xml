@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
@@ -8,49 +9,45 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.portafolio.librarywidget_android_java.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label="Bienvenido"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.portafolio.librarywidget_android_java.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.portafolio.librarywidget_android_java.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-    <fragment
         android:id="@+id/nav_dialog1"
-        android:name="com.portafolio.librarywidget_android_java.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:name="com.portafolio.librarywidget_android_java.ui.dialog1.dialog1"
+        android:label="nav_dialog1"
         tools:layout="@layout/fragment_nav_dialog1" />
     <fragment
         android:id="@+id/nav_dialog2"
-        android:name="com.portafolio.librarywidget_android_java.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:name="com.portafolio.librarywidget_android_java.ui.dialog2.dialog2"
+        android:label="nav_dialog2"
         tools:layout="@layout/fragment_nav_dialog2" />
     <fragment
         android:id="@+id/nav_dialog3"
-        android:name="com.portafolio.librarywidget_android_java.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:name="com.portafolio.librarywidget_android_java.ui.dialog3.nav_dialog3"
+        android:label="nav_dialog3"
         tools:layout="@layout/fragment_nav_dialog3" />
     <fragment
         android:id="@+id/nav_dialog4"
-        android:name="com.portafolio.librarywidget_android_java.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:name="com.portafolio.librarywidget_android_java.ui.dialog4.nav_dialog4"
+        android:label="nav_dialog4"
         tools:layout="@layout/fragment_nav_dialog4" />
     <fragment
         android:id="@+id/nav_dialog5"
-        android:name="com.portafolio.librarywidget_android_java.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:name="com.portafolio.librarywidget_android_java.ui.dialog5.nav_dialog5"
+        android:label="nav_dialog5"
         tools:layout="@layout/fragment_nav_dialog5" />
     <fragment
         android:id="@+id/nav_dialog6"
-        android:name="com.portafolio.librarywidget_android_java.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:name="com.portafolio.librarywidget_android_java.ui.dialog6.nav_dialog6"
+        android:label="nav_dialog6"
         tools:layout="@layout/fragment_nav_dialog6" />
+    <fragment
+        android:id="@+id/nav_dialog7"
+        android:name="com.portafolio.librarywidget_android_java.ui.dialog7.nav_dialog7"
+        android:label="nav_dialog6"
+        tools:layout="@layout/fragment_nav_dialog7" />
+
+
 
 </navigation>

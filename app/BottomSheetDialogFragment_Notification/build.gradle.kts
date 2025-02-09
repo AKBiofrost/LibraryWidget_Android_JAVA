@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.portafolio.bottomsheetdialogfragment_notification"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 30

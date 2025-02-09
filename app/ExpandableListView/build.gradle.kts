@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.portafolio.expandablelistview"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 30

@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.portafolio.librarywidget_android_java"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.portafolio.librarywidget_android_java"
@@ -43,6 +43,8 @@ dependencies {
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
+    implementation(project(":app:BottomSheetDialog"))
+    implementation(project(":app:BottomSheetDialogFragment_imagen"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
