@@ -45,6 +45,7 @@ dependencies {
     implementation(libs.navigation.ui)
     implementation(project(":app:BottomSheetDialog"))
     implementation(project(":app:BottomSheetDialogFragment_imagen"))
+    implementation(project(":app:AlertDialogView"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

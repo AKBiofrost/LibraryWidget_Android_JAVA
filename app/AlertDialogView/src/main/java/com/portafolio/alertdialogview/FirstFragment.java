@@ -1,5 +1,6 @@
 package com.portafolio.alertdialogview;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,8 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.portafolio.alertdialogview.databinding.FragmentFirstBinding;
+import com.portafolio.alertdialogview.utiles.Dialog;
+import com.portafolio.alertdialogview.utiles.callbackDialog;
 
 public class FirstFragment extends Fragment {
 
@@ -29,10 +32,24 @@ public class FirstFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonFirst.setOnClickListener(v ->
-                NavHostFragment.findNavController(FirstFragment.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment)
-        );
+
+        new Dialog().ViewDialogCallbak("Dialog widget", "El mas reutilizable", "Aceptar",
+                "Cancelar", getContext(), R.drawable.alert, new callbackDialog() {
+                    @Override
+                    public void ActionAceptar(Context context) {
+                        NavHostFragment.findNavController(FirstFragment.this)
+                                .navigate(R.id.action_FirstFragment_to_SecondFragment);
+
+                    }
+
+                    @Override
+                    public void ActionCancelar(Context context) {
+
+                        getActivity().finish();
+                    }
+                });
+
+
     }
 
     @Override
