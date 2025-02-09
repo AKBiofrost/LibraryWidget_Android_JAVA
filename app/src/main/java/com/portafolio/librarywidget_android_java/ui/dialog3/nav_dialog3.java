@@ -66,7 +66,7 @@ public class nav_dialog3 extends Fragment {
                              Bundle savedInstanceState) {
 
 
-        View view = inflater.inflate(R.layout.fragment_nav_dialog2, container, false);
+        View view = inflater.inflate(R.layout.fragment_nav_dialog3, container, false);
         Button button = view.findViewById(R.id.button);
 
         button.setOnClickListener(v -> {

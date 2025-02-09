@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="azul_1">#FF5722</color>
+    <color name="color_base">#FF5722</color>
+    <color name="color_base_botones">#FF5722</color>
+    <color name="color_base1">#2196F3</color>
+    <color name="color_base2">#063460</color>
+    <color name="color_base3">#FF9800</color>
+    <color name="color_aprobado">#FFEB3B</color>
+    <color name="color_rechazado">#F44336</color>
+    <color name="color_base5">#053761</color>
+    <color name="black">#FF000000</color>
+    <color name="yellow">#FFFFFFFF</color>
+    <color name="red">#FFFFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blanco_sucio">#F6F0F0</color>
+    <color name="green">#FFFFFFFF</color>
+</resources>

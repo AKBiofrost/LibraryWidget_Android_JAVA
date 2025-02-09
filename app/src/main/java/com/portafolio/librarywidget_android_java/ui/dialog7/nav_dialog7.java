@@ -1,5 +1,6 @@
 package com.portafolio.librarywidget_android_java.ui.dialog7;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,7 +8,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
+import com.portafolio.bottomsheetdialogfragment_listcardview.MainActivity_bottomSheetDialogFragment_listCardView;
+import com.portafolio.expandablelistview_itemcardview.MainActivity_expandable_itemCardView;
 import com.portafolio.librarywidget_android_java.R;
 
 /**
@@ -60,7 +64,21 @@ public class nav_dialog7 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+
+        View view = inflater.inflate(R.layout.fragment_nav_dialog7, container, false);
+        Button button = view.findViewById(R.id.button);
+
+        button.setOnClickListener(v -> {
+
+            Intent intent = new Intent(getActivity(), MainActivity_expandable_itemCardView.class);
+            startActivity(intent);
+
+        });
+
+
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_nav_dialog7, container, false);
+        return view;
     }
 }

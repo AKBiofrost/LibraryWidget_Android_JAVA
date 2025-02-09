@@ -46,6 +46,8 @@ dependencies {
     implementation(project(":app:BottomSheetDialog"))
     implementation(project(":app:BottomSheetDialogFragment_imagen"))
     implementation(project(":app:AlertDialogView"))
+    implementation(project(":app:BottomSheetDialogFragment_ListCardView"))
+    implementation(project(":app:ExpandableListView_itemCardView"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

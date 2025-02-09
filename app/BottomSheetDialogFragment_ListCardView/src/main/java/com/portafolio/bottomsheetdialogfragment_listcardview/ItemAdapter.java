@@ -17,11 +17,13 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
     private String[] items;
     private Activity activity;
     private BottomSheetDialog bottomSheetDialog;
+    private callbackDialog callbackDialog;
 
-    public ItemAdapter(String[] items, Activity activity, BottomSheetDialog bottomSheetDialog) {
+    public ItemAdapter(String[] items, Activity activity, BottomSheetDialog bottomSheetDialog, callbackDialog callbackDialog) {
         this.items = items;
         this.activity = activity;
         this.bottomSheetDialog = bottomSheetDialog;
+        this.callbackDialog=callbackDialog;
     }
 
     @NonNull
@@ -37,8 +39,9 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         holder.itemTextView.setText(item);
 
         holder.itemView.setOnClickListener(v -> {
-            Toast.makeText(activity.getApplicationContext(), "Clicked: " + item, Toast.LENGTH_SHORT).show();
+
             bottomSheetDialog.dismiss();
+            callbackDialog.ActionAceptar(activity,item);
         });
     }
 
