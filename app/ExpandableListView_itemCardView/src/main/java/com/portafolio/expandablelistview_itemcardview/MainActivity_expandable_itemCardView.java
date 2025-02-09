@@ -46,16 +46,12 @@ public class MainActivity_expandable_itemCardView extends AppCompatActivity {
         }, new CallBack_child() {
             @Override
             public void Response(String operation) {
-
+                Toast.makeText(getApplicationContext(), "Clicked: " + operation, Toast.LENGTH_SHORT).show();
             }
         });
+
         expandableListView.setAdapter(expandableListAdapter);
         // Listener para manejar clics en los hijos
-        expandableListView.setOnChildClickListener((parent, v, groupPosition, childPosition, id) -> {
-            String childText = (String) expandableListAdapter.getChild(groupPosition, childPosition);
-            Toast.makeText(getApplicationContext(), "Clicked: " + childText, Toast.LENGTH_SHORT).show();
-            return false;
-        });
 
 
     }
@@ -65,23 +61,23 @@ public class MainActivity_expandable_itemCardView extends AppCompatActivity {
         listDataChild = new HashMap<>();
 
         // Añadir encabezados
-        listDataHeader.add("Transacciones");
-        listDataHeader.add("Consultas");
-        listDataHeader.add("Miscelaneos");
+        listDataHeader.add("Grupo 1");
+        listDataHeader.add("Grupo 2");
+        listDataHeader.add("Grupo 3");
 
         // Añadir hijos
         List<String> grupo1 = new ArrayList<>();
-        grupo1.add("COMPRA");
-        grupo1.add("C@MBIO");
-        grupo1.add("ANULACION");
+        grupo1.add("AAAAAA");
+        grupo1.add("BBBBBB");
+        grupo1.add("CCCCCC");
 
         List<String> grupo2 = new ArrayList<>();
-        grupo2.add("ULT VOUCHER");
-        grupo2.add("CIERRE");
+        grupo2.add("111111");
+        grupo2.add("222222");
 
         List<String> grupo3 = new ArrayList<>();
-        grupo3.add("CALIBRAR");
-        grupo3.add("BLOQUEAR");
+        grupo3.add("123456");
+        grupo3.add("123456");
 
         listDataChild.put(listDataHeader.get(0), grupo1); // Grupo 1
         listDataChild.put(listDataHeader.get(1), grupo2); // Grupo 2

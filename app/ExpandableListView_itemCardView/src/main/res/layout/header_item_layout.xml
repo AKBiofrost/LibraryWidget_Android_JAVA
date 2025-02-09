@@ -5,14 +5,16 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:backgroundTint="@color/color_base1"
     app:cardCornerRadius="20dp"
+    android:padding="10dp"
     app:cardElevation="5dp">
 
     <Button
         android:id="@+id/boton_compra"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:background="@color/color_base"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/color_base1"
         android:text="Compra"
         android:textColor="@color/blanco_sucio"
         android:textSize="18sp"
