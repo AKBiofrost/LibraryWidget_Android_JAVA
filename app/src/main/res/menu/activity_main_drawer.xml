@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/homa"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_dialog1"
+            android:icon="@drawable/burbuja"
+            android:title="AlertDialog" />
+        <item
+            android:id="@+id/nav_dialog2"
+            android:icon="@drawable/burbuja"
+            android:title="DialogFragment" />
+        <item
+            android:id="@+id/nav_dialog3"
+            android:icon="@drawable/burbuja"
+            android:title="DialogFragmentA" />
+        <item
+            android:id="@+id/nav_dialog4"
+            android:icon="@drawable/burbuja"
+            android:title="DialogFragmentB" />
+        <item
+            android:id="@+id/nav_dialog5"
+            android:icon="@drawable/burbuja"
+            android:title="DialogFragmentC" />
+        <item
+            android:id="@+id/nav_dialog6"
+            android:icon="@drawable/burbuja"
+            android:title="ExpandableListView" />
+    </group>
+</menu>

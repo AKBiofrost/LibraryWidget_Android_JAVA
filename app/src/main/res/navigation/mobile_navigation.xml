@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.portafolio.librarywidget_android_java.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.portafolio.librarywidget_android_java.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.portafolio.librarywidget_android_java.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_dialog1"
+        android:name="com.portafolio.librarywidget_android_java.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_nav_dialog1" />
+    <fragment
+        android:id="@+id/nav_dialog2"
+        android:name="com.portafolio.librarywidget_android_java.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_nav_dialog2" />
+    <fragment
+        android:id="@+id/nav_dialog3"
+        android:name="com.portafolio.librarywidget_android_java.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_nav_dialog3" />
+    <fragment
+        android:id="@+id/nav_dialog4"
+        android:name="com.portafolio.librarywidget_android_java.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_nav_dialog4" />
+    <fragment
+        android:id="@+id/nav_dialog5"
+        android:name="com.portafolio.librarywidget_android_java.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_nav_dialog5" />
+    <fragment
+        android:id="@+id/nav_dialog6"
+        android:name="com.portafolio.librarywidget_android_java.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_nav_dialog6" />
+
+</navigation>
